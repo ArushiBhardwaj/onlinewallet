@@ -7,7 +7,6 @@ public class Menu {
     Integer userId;
     java.util.Scanner sc=new java.util.Scanner(System.in);
 	public Menu(Integer uid) {
-		// TODO Auto-generated constructor stub
     	userId=uid;
     	askInput();
     	
@@ -36,7 +35,7 @@ public class Menu {
         }
         void askAmountDetails()
         {
-        	System.out.println("Enter amount to transfer in your account");
+        	System.out.println("Enter amount to add in your account");
         	Double amount=sc.nextDouble();
         	new AddAmountValidation().addAmount(userId, amount);
         	

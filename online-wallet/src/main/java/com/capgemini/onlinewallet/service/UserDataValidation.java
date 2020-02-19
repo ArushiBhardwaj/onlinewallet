@@ -8,7 +8,7 @@ import com.capgemini.onlinewallet.exception.ValidationException;
 public class UserDataValidation {
 
 	public UserDataValidation() {
-		// TODO Auto-generated constructor stub
+
 	}
 	public boolean checkNull(String check) throws NullValueException
 	{

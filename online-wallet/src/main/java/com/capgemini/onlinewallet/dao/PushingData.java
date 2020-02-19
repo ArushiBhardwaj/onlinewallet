@@ -37,14 +37,6 @@ public class PushingData {
 		uar.putData(wu.get(itwu.next()), wa.get(itwa.next()));
 		
 	}
-	
-	/*HashMap<Integer,Integer> ua=uar.getUserAccountTable();
-	Set<Integer> keyset=ua.keySet();
-	Iterator<Integer> it=keyset.iterator();
-	while(it.hasNext())
-	{   
-		System.out.println("account number is is: "+ua.get(it.next()));
-	}*/
-	System.out.println("data entered");
+		
     }
 }

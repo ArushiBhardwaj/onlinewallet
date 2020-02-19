@@ -19,7 +19,7 @@ public class DisplayData {
 		{   WalletUser o=wut.get(it.next());
 			System.out.println("User Name: "+o.getUserName()+" UserId: "+o.getUserID()+" Phone Number: "+o.getPhoneNumber()+" Login Name: "+o.getLoginName());
 		}
-		// TODO Auto-generated constructor stub
+
 		
 		
 		System.out.println("Displaying wallet account data");

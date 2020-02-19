@@ -1,7 +1,9 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 import org.junit.Test;
 
+import com.capgemini.onlinewallet.dao.PushingData;
 import com.capgemini.onlinewallet.dao.SaveRegisterUserData;
 import com.capgemini.onlinewallet.service.AddAmountValidation;
 import com.capgemini.onlinewallet.service.ShowBalanceValidation;
@@ -10,35 +12,39 @@ public class DaoTest {
 	//Test cases of SaveRegisterUserData class
 	ShowBalanceValidation obj=new ShowBalanceValidation();
 	AddAmountValidation obj1=new AddAmountValidation();
+	
 	@Test
 	public void validateLoginName()
-	{
-		assertEquals(true,new SaveRegisterUserData().validateLoginName("walletarushi"));
+	{   new PushingData();
+		assertEquals(false,new SaveRegisterUserData().validateLoginName("walletarushi"));
 		
 	}
 	@Test
 	public void validateLoginNameTest()
-	{
-		assertEquals(false,new SaveRegisterUserData().validateLoginName("wallet"));
+	{   new PushingData();
+		assertEquals(true,new SaveRegisterUserData().validateLoginName("wallet"));
 	}
 	@Test
 	public void saveUserData()
-	{
-		assertEquals(true,new SaveRegisterUserData().saveUserData("Arushi", "1234", "Arushi1234", "8728925856"));
+	{   new PushingData();
+		int res=new SaveRegisterUserData().saveUserData("Arushi", "12345678", "Arushi1234", "8728925856");
+		assertEquals(111004,res);
 	}
 	//Test cases of Connection class
-	/*@Test
+	@Test
 	public void showBalanceTest()
 	{
+		new PushingData();
 		double d=obj.showBalance(111002);
 		assertEquals(0.0,d);
 	}
 	@Test
 	public void addAmountTest()
 	{
+		new PushingData();
 		double d1=obj1.addAmount(111001, 20000.0);
 		assertEquals(20000.0,d1);
-	}*/
+	}
 
 
 }

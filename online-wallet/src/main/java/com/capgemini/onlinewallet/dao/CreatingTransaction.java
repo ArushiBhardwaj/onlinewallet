@@ -11,7 +11,6 @@ public class CreatingTransaction {
 
 	public CreatingTransaction(Integer ID,Integer tid,String des,LocalDateTime time,Double amt,Double bal)
 	{   WalletTransactions wt=new WalletTransactions(tid,des,time,amt,bal);
-		// TODO Auto-generated constructor stub
 	    new WalletTransactionsRepository().putData(wt);//putting newly created transaction into table
 	    HashMap<Integer,Integer> uat=new UserAccountRepository().getUserAccountTable();
 	    Integer accountId=uat.get(ID);

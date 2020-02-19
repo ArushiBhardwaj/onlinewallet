@@ -15,7 +15,7 @@ public class AddAmountValidation {
     	}
     	catch(NegativeValueException e)
     	{
-    		System.out.println(e.getMessage());
+    		System.err.println(e.getMessage());
     	}
     	return new Connection().addAmount(userId, amount);
     }
